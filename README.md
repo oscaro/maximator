@@ -1,17 +1,14 @@
 # maximator
 
-Thin Clojure wrapper around MaxMind GeoIP2 for IP geolocalization.
+Thin Clojure wrapper around [MaxMind GeoIP2](http://dev.maxmind.com/geoip/#GeoIP2) for IP geolocalization.
 
 ## Installation
 
 `maximator` is available as a Maven artifact from
-[Clojars](http://clojars.org/maximator):
+[Clojars](http://clojars.org/com.oscaro/maximator):
 
-In your `project.clj` dependencies for *leiningen*:
+[![Clojars Project](http://clojars.org/com.oscaro/maximator/latest-version.svg)](http://clojars.org/com.oscaro/maximator)
 
-```clojure
-[com.oscaro/maximator "0.1.0"]
-```
 
 ## Usage
 
