@@ -2,6 +2,8 @@
 
 Thin Clojure wrapper around [MaxMind GeoIP2](http://dev.maxmind.com/geoip/#GeoIP2) for IP geolocalization.
 
+Documentation can be found on [cljdoc](https://cljdoc.org/d/com.oscaro/maximator/CURRENT).
+
 ## Installation
 
 `maximator` is available as a Maven artifact from
