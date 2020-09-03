@@ -3,7 +3,7 @@
   Please download them from the MaxMind website."
   (:require [clojure.test :refer :all]
             [com.oscaro.maximator :refer :all]
-            [clojure.pprint :as pp]))
+))
 
 
 (def locators {:city    (make-locator "dev-resources/GeoLite2-City.mmdb" :locales [:en])
