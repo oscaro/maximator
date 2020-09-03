@@ -12,5 +12,5 @@
 
   :plugins [[lein-codox "0.10.7"]]
 
-  :codox {:source-uri "https://github.com/bpindelski/maximator/blob/{version}/{filepath}#L{line}"
+  :codox {:source-uri "https://github.com/oscaro/maximator/blob/{version}/{filepath}#L{line}"
           :metadata   {:doc/format :markdown}})
