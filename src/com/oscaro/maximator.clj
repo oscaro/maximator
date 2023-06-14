@@ -30,6 +30,7 @@
     ["com.maxmind.geoip2.model.ConnectionTypeResponse"]
     ["com.maxmind.geoip2.model.IspResponse"]
     ["com.maxmind.geoip2.model.DomainResponse"]
+    ["com.maxmind.geoip2.model.AsnResponse"]
     ["com.maxmind.geoip2.record.City" :exclude [:names] :add {:names names-as-kw}]
     ["com.maxmind.geoip2.record.Continent" :exclude [:names] :add {:names names-as-kw}]
     ["com.maxmind.geoip2.record.Country" :exclude [:names] :add {:names names-as-kw}]
@@ -69,3 +70,10 @@
   [^GeoIp2Provider db ip]
   (if-let [country (.country db (InetAddress/getByName ip))]
     (g/translate translator country {:lazy? false})))
+
+(defn lookup-asn
+  "Lookup an `ip` given as a String in the given ASN `db` and returns a map with results.
+  Scoped to a ASN level."
+  [^GeoIp2Provider db ip]
+  (if-let [asn (.asn db (InetAddress/getByName ip))]
+    (g/translate translator asn {:lazy? false})))
